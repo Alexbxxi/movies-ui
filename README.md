@@ -1,8 +1,8 @@
-# Pulpo movies 🐙
+# Pulpomovies 🐙
 
 # Introduction
 
-Pulpo movies is a project for watch the most rated and search available movies.
+Pulpomovies is a project for watch the most rated and search available movies.
 
 # Installation
 
