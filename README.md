@@ -1,4 +1,4 @@
-<em> # Pulpo movies 🐙</em>
+# Pulpo movies 🐙
 
 # Introduction
 
