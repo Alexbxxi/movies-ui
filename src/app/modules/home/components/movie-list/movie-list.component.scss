@@ -1,0 +1,35 @@
+.cards-list {
+  gap: 1rem;
+  display: grid;
+  justify-items: center;
+  position: relative;
+
+  // Small devices (portrait phones, 320px and up)
+  @media (min-width: 320px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.card-list__title {
+  text-align: center;
+}

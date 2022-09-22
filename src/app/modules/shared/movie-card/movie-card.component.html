@@ -1,0 +1,5 @@
+<div class="movie-card" *ngIf="movie">
+  <img class="movie-card__img animate__animated animate__fadeIn" [src]="img_path" [alt]="movie.title"
+    loading="lazy">
+  <app-movie-detail [movie]="movie" *ngIf="movie.id === movieService.currentMovie"></app-movie-detail>
+</div>

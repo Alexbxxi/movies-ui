@@ -1,0 +1,19 @@
+<div class="movie-detail" *ngIf="movie">
+  <div class="movie-detail__header">
+    <span class="material-icons material-symbols-outlined" (click)="closeDetails()">
+      close
+    </span>
+    <h3>{{movie.original_title}}</h3>
+    <span class="material-icons material-symbols" title="Watchlist"
+      (click)="movieService.handleWatchlist(movie)">
+      {{ movie.watchlist ? 'remove' : 'add' }}
+    </span>
+  </div>
+  <hr>
+  <p>{{movie.overview}}</p>
+  <span>Genres: {{movie.genre_names}}</span>
+  <br>
+  <span>Release date: {{movie.release_date | date: 'mediumDate'}}</span>
+  <br>
+  <span>Score: {{movie.vote_average}}/10</span>
+</div>

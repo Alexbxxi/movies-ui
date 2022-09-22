@@ -1,0 +1,37 @@
+.watchlist {
+  padding: 0 2rem;
+
+  &__container {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__content {
+    width: 100%;
+    padding: 1rem;
+    overflow: hidden;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__checkbox {
+    width: 20px;
+    height: 20px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 12px;
+  }
+}

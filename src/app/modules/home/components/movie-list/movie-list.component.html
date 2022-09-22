@@ -1,0 +1,9 @@
+<app-search (moviesSearchEvent)="getFilterMovies($event)"></app-search>
+<h3 class="card-list__title">Most rated 🍅</h3>
+<div class="cards-list" infiniteScroll [infiniteScrollDistance]="0" [infiniteScrollThrottle]="2000"
+  (scrolled)="getMovies()">
+  <ng-container *ngFor="let movie of movies">
+    <app-movie-card [movie]="movie" (mouseover)="sendDetails(movie)">
+    </app-movie-card>
+  </ng-container>
+</div>

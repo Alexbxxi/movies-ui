@@ -1,0 +1,24 @@
+<div class="watchlist">
+  <h2>Watchlist</h2>
+  <ng-container *ngFor="let movie of moviesWatchlist;">
+    <div class="watchlist__container">
+      <app-movie-card [movie]="movie"></app-movie-card>
+      <div class="watchlist__content">
+        <div class="watchlist__header">
+          <h3>{{ movie.title }}</h3>
+          <div class="watchlist__icons">
+            <input type="checkbox" class="watchlist__checkbox" (click)="addToSeenMovies(movie)"
+              [checked]="movie.seen_movie === true">
+            <span class="material-icons material-symbols" title="Remove" (click)="updateWatchlist(movie)">
+              {{ movie.watchlist ? 'remove' : 'add' }}
+            </span>
+          </div>
+        </div>
+        <p>{{ movie.overview }}</p>
+        <span>Genre: {{ movie.genre_names }}</span>
+        <br>
+        <span>Release year: {{ movie.release_date | date: 'YYYY' }}</span>
+      </div>
+    </div>
+  </ng-container>
+</div>

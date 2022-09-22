@@ -1,0 +1,61 @@
+.movie-card {
+  position: relative;
+  cursor: pointer;
+
+  &__btn--watchlist {
+    width: auto;
+    margin: 0.1rem;
+    border: transparent;
+    border-radius: 5px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    color: #fff;
+    background-color: transparent;
+  }
+
+  &__img {
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+      -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+    transition: 0.4s;
+
+    .animate__animated.animate__fadeIn {
+      --animate-duration: 2s;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    // Small devices (portrait phones, 320px and up)
+    @media (min-width: 320px) {
+      width: 100px;
+      height: 150px;
+    }
+
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {
+      width: 100px;
+      height: 150px;
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+      width: 150px;
+      height: 200px;
+    }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+      width: 200px;
+      height: 300px;
+    }
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+      width: 200px;
+      height: 300px;
+    }
+  }
+}
