@@ -2,7 +2,7 @@
 
 # Introduction
 
-Pulpomovies is a project for watch the most rated and search available movies using the API of https://www.themoviedb.org/. 😊
+MoviesUi is a project for watch the most rated and search available movies using the API of https://www.themoviedb.org/. 😊
 
 # Installation
 
